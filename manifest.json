@@ -1,0 +1,23 @@
+{
+	"name": "a",
+	"version": "2.1.7",
+	"description": "a",
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"*://*.*.*/*",
+		"storage"
+	],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": true
+	},
+	"content_scripts": [{
+		"matches": ["https://play.prodigygame.com/*"],
+		"js": ["disableIntegrity.js"]
+	}],
+	"browser_action": {
+		"default_popup": "popup.html"
+	},
+	"manifest_version": 2
+}
