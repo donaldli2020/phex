@@ -1,6 +1,6 @@
 {
 	"name": "a",
-	"version": "2.1.7",
+	"version": "2.1.8",
 	"description": "a",
 	"permissions": [
 		"webRequest",
@@ -14,7 +14,7 @@
 		"persistent": true
 	},
 	"content_scripts": [{
-		"matches": ["https://play.prodigygame.com/*"],
+		"matches": ["https://math.prodigygame.com/*"],
 		"js": ["disableIntegrity.js"]
 	}],
 	"manifest_version": 2
